@@ -1,6 +1,6 @@
 # Declare variables
-length = 1000  # Length of rectangle
-width = 0.05       # Width of rectangle
+length = 10  # Length of rectangle
+width = 5       # Width of rectangle
 
 #Calculate Area
 area = length * width
