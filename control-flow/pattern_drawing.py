@@ -6,8 +6,10 @@ row = size  # Initialize row with the size
 if size > 0:
     # Draw the pattern
     while row > 0:
-        print("*" * size)  # Print a row of asterisks
-        row -=1
-    
+    # Print a row of asterisks without moving to a new line
+        for col in range(size):
+            print("*", end="")
+        print()  # Move to the next line after completing a row
+        row -= 1  # Decrement the row counter
 else:
     print("Please enter a positive integer.")
