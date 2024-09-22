@@ -2,10 +2,10 @@
 task = input("Enter your task: ")
 
 # Ask for the priority level
-priority = input("Priority (high/medium/low): ").lower()
+priority = input("Priority (high/medium/low): ")
 
 # Ask if the task is time-bound
-time_bound = input("Is it time-bound? (yes/no): ").lower()
+time_bound = input("Is it time-bound? (yes/no): ")
 
 # Create a basic reminder message
 if priority == "high":
