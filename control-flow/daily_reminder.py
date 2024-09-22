@@ -1,10 +1,11 @@
- # Ask for the task description
-task = input("Enter the task description: ")
+# Ask for the task description
+task = input("Enter your task: ")
 
-priority = input("Enter the priority level (high, medium, low): ")
+# Ask for the priority level
+priority = input("Priority (high/medium/low): ").lower()
 
-# Ask if the task is time-sensitive
-time_bound = input("Is this task time-sensitive? (yes/no): ")
+# Ask if the task is time-bound
+time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 # Create a basic reminder message
 if priority == "high":
@@ -19,4 +20,5 @@ else:
 # Add urgency if the task is time-sensitive
 if time_bound == "yes":
     reminder += " This requires immediate attention!"
-    print(reminder)  # Print the reminder
+
+print(reminder) # Print the reminder
