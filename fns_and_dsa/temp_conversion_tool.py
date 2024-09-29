@@ -33,7 +33,13 @@ def main():
       print(f"{temperature:.1f}{unit_label} is {converted_temp:.2f}{result_unit}")
       break
     except ValueError as e:
-      print(f"Error: {e}")
+      # Handle the case where the user enters a non-numeric value
+      if "could not convert string to float" in str(e):  # Check for specific error message
+        print("Invalid temperature. Please enter a numeric value.")
+      else:
+        print(f"Error: {e}")  # Print the original error message for other cases
+
+
 
 
 if __name__ == "__main__":
